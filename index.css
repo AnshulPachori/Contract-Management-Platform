@@ -1,0 +1,17 @@
+.form-label {
+  @apply block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2;
+}
+
+.form-input {
+  @apply w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200
+  font-bold text-sm focus:bg-white focus:border-blue-500 transition disabled:opacity-50;
+}
+
+.signature-box {
+  @apply border-2 border-dashed rounded-2xl p-8 text-center
+  bg-slate-50 transition-all;
+}
+
+.signature-text {
+  @apply text-[10px] font-black uppercase tracking-widest text-slate-400;
+}
