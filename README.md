@@ -1,75 +1,129 @@
+Contract Management Platform
+📌 Overview
 
-# ContractFlow – Contract Management Platform
+This project is a frontend-focused Contract Management Platform designed to showcase modern UI/UX design, reusable component architecture, and structured state-driven workflows.
+The application allows users to build reusable contract templates, generate contracts from those templates, configure dynamic fields, and manage contracts through a controlled lifecycle — all without a backend.
 
-## 📌 Project Description
-ContractFlow is a frontend-based Contract Management Platform built to demonstrate product thinking, UI/UX design, structured state management, and clean frontend architecture. The application enables users to create reusable contract blueprints, generate contracts, and manage their lifecycle without relying on a backend service.
-## Live Demo
+The main goal of this project is to demonstrate frontend engineering skills, product-oriented thinking, and clean state management using mocked persistence.
 
-Check out the live version of this project here: [React App Live](https://contract-flow-phi.vercel.app)
+🌐 Live Demo
 
----
+🔗 Live Application:
+https://contractmanagementplatform.netlify.app
 
-## 🚀 Features
+📂 Source Code
 
-### 🔹 Blueprint Creation
-- Create reusable contract templates (Blueprints)
-- Supported field types:
-  - Text
-  - Date
-  - Signature
-  - Checkbox
-- Basic positioning of fields on a contract page
-- Stores field metadata such as type, label, and position
-- Blueprint data stored using mocked/local persistence
+🔗 GitHub Repository:
+https://github.com/AnshulPachori/Contract-Management-Platform.git
 
-### 🔹 Contract Creation
-- Generate contracts from existing blueprints
-- Contracts inherit all blueprint fields
-- Users can fill values for contract fields
+✨ Core Features
+🧩 Blueprint (Template) Builder
 
-### 🔹 Contract Lifecycle Management
-Each contract follows a controlled lifecycle:
+Create reusable contract templates
 
+Supported configurable field types:
 
+Text
 
-- Revoked state allowed after Created or Sent
-- Lifecycle steps cannot be skipped
-- Locked contracts cannot be edited
-- Revoked contracts cannot proceed further
-- UI clearly shows current status and available actions
+Date
 
-### 🔹 Contract Dashboard
-- Displays all contracts in a table view
-- Filtered/grouped by status:
-  - Active
-  - Pending
-  - Signed
-- Table includes:
-  - Contract name
-  - Blueprint name
-  - Status
-  - Created date
-  - Action buttons (view, update status)
+Checkbox
 
----
+Signature (visual placeholder)
 
-## 🛠 Tech Stack
-- React
-- TypeScript
-- Component-based architecture
-- Local storage / Mocked data persistence
-- Clean folder structure and reusable components
+Assign labels and basic layout positions to fields
 
----
+Blueprint metadata stored using local / mocked persistence
 
-## ⚙️ Setup Instructions
+Templates can be reused across multiple contracts
 
-```bash
+📝 Contract Generation
+
+Create contracts directly from existing blueprints
+
+Contracts automatically inherit all blueprint fields
+
+Users can fill and update field values
+
+Clear separation between template structure and contract data
+
+🔄 Contract Lifecycle Control
+
+Each contract follows a strict and controlled lifecycle to prevent invalid transitions.
+
+Key Rules
+
+Lifecycle stages cannot be skipped
+
+Revocation is allowed only in specific states
+
+Locked contracts are fully read-only
+
+Revoked contracts cannot move forward
+
+Available actions update dynamically based on contract status
+
+📊 Contract Dashboard
+
+Centralized dashboard displaying all contracts
+
+Filter and group contracts by status:
+
+Active
+
+Pending Signature
+
+Completed
+
+Table view includes:
+
+Contract name
+
+Associated blueprint
+
+Current status
+
+Creation date
+
+Context-aware action buttons
+
+🛠 Technology Stack
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+Component-driven architecture
+
+Local Storage / Mocked persistence
+
+Clean and scalable folder structure
+
+🧠 Architecture & Design Decisions
+
+Modular, reusable component structure
+
+Centralized state handling for contracts and templates
+
+Business logic separated from UI components
+
+Lifecycle enforcement handled through controlled state transitions
+
+No backend dependency to keep the focus on frontend design and architecture
+
+⚙️ Getting Started
+Prerequisites
+
+Node.js (v16 or later)
+
+Installation
 # Clone the repository
-git clone https://github.com/shuchitha28/ContractFlow.git
+git clone https://github.com/AnshulPachori/Contract-Management-Platform.git
 
 # Navigate to the project directory
-cd contractflow
+cd Contract-Management-Platform
 
 # Install dependencies
 npm install
@@ -77,28 +131,33 @@ npm install
 # Start the development server
 npm run dev
 
-## Run Locally
 
-**Prerequisites:**  Node.js
-```
-##Architecture & Design Decisions
+The app will run locally at:
 
--Modular, component-based structure for scalability
+http://localhost:5173
 
--Centralized state management for contracts and blueprints
+⚠️ Assumptions & Limitations
 
--Clear separation of UI components and business logic
+Backend services and authentication are not implemented
 
--Lifecycle logic enforced through controlled state transitions
+Data persistence is local / mocked
 
--No backend dependency to keep focus on frontend architecture
+Signature field is visual only (no real signing logic)
 
-##⚠️ Assumptions & Limitations
+Field positioning is basic and not advanced drag-and-drop
 
--Backend and authentication are not implemented
+Designed primarily as a frontend architecture and UI showcase
 
--Data is stored locally or mocked
+🎯 Project Purpose
 
--Field positioning is basic (no advanced drag-and-drop)
+This project was built to demonstrate:
 
--Signature field is a placeholder without real signing logic
+Real-world frontend workflows
+
+Clean and scalable React architecture
+
+UI/UX attention to detail
+
+Controlled state-driven business logic
+
+Product-level thinking without backend complexity
